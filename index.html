@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="favicon.png">
+
+    <title>Fundación Hamila Health | Centro Médico Quirúrgico | Clínica Oftalmológica Barcelona</title>
+  </head>
+  <body>
+    <!-- navegación -->
+    <div class="shadow-sm p-0 mb-0 bg-transparente">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparency">
+        <p>Fundación Hamila Health</p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-home"></i> Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-user-doctor"></i> Cirugía laser ocular <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="algoespecial.html"><i class="fa-solid fa-star"></i> Algo especial <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-right-to-bracket"></i> Registrar <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-key"></i> Acceso <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <a class="btn btn-light" href="consultasonline.html" role="button"><i class="fa-solid fa-calendar-days"></i> Pide tu Consulta Online</a>
+          </form>
+        </div>
+      </nav>
+    </div> <br><br>
+    <!-- h1 & h2 -->
+    <div class="container"><center>
+      <h1>Acceso médico simplificado</h1>
+      <h2>Consultas en línea y citas a un clic de distancia</h2>
+    </center></div>
+    <!-- detalles del contacto -->
+    <div class="container"><center>
+      <p>
+        Correo: info@hamilahealthfoundation.org <br>
+        Movil: 615 86 23 06 <br>
+        Telefono: 93 226 78 13 <br>
+        Direccion : Carrer Diputacion, 24 - Barcelona
+      </p>
+    </center></div>
+    <!-- opciones -->
+    <div class="container"><center>
+      <button class="btn btn-light" type="button">
+        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+        OPCIÓN PRESENCIAL <i class="fa-solid fa-person"></i>
+      </button>
+      <button class="btn btn-success" type="button">
+        <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+        OPCIÓN ONLINE <i class="fa-solid fa-video"></i>
+      </button>
+    </center></div>
+    <div class="container"><center>
+      <h3>Menú desplegable de especialidades médicas</h3>
+      <select id="especialidades" onchange="redirigirAreaPrivada()">
+        <option value="analíticas">Analíticas</option>
+        <option value="cardiología">Cardiología</option>
+        <option value="dermatología">Dermatología</option>
+        <option value="dentista">Dentista</option>
+        <option value="endocrinología">Endocrinología</option>
+        <option value="medicina general">Medicina general</option>
+        <option value="nutricionista">Nutricionista</option>
+        <option value="oftalmología">Oftalmología</option>
+        <option value="podología">Podología</option>
+        <option value="psicología">Psicología</option>
+        <option value="psiquiatría">Psiquiatría</option>
+        <option value="renovación carne de conducir">Renovación carne de conducir</option>
+        <option value="traumatología">Traumatología</option>
+        <option value="urología">Urología</option>
+          <!-- Agrega más opciones según tus necesidades -->
+      </select>
+
+      <div id="aviso"></div>
+    </center></div>
+    <script>
+      function redirigirAreaPrivada() {
+          var select = document.getElementById("especialidades");
+          var especialidad = select.options[select.selectedIndex].value;
+
+          if (especialidad !== "") {
+              window.location.href = "https://vasileios50.github.io/fundacion/" + especialidad;
+          }
+      }
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  </body>
+</html>
